@@ -1,0 +1,402 @@
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 38px;
+    margin-left: 32px;
+    margin-right: 41px;
+}
+
+.history-data {
+    display: flex;
+    flex-direction: row;
+    gap: 62px;
+    // justify-content: space-evenly;
+    width: 100%;
+}
+
+.weather-table-history {
+    width: 1210px;
+    height: 450px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    margin-left: 0px;
+    margin-bottom: 61px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: -1px -1px 8px 0px rgba(0, 0, 0, 0.08), 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+.device-history-log {
+    display: flex;
+    flex-direction: row;
+    gap: 860px;
+    // justify-content: space-between;
+    margin-left: 50px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    //  overflow-y: scroll;
+}
+
+.history-letter {
+    font-size: 24px;
+}
+
+.table-button {
+    border: none;
+    background-color: white;
+    margin-right: 30px;
+}
+
+.container {
+    // display: ;
+    // max-width: 1200px;
+    margin-left: 50px;
+    margin-right: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 370px;
+    width: 1200px;
+    //  overflow-x: hidden;
+    //  
+
+}
+
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+
+    small {
+        font-size: 0.5em;
+    }
+}
+
+.responsive-table {
+    width: 1200px;
+
+    li {
+        border-radius: 3px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+        // margin-bottom: 1px;
+    }
+
+    .table-header {
+        width: 1100px;
+        color: #312a2a;
+        // position: relative;
+        // bac
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-row {
+        width: 1100px;
+        height: 60px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .col-1 {
+        flex-basis: 10%;
+    }
+
+    .col-2 {
+        flex-basis: 10%;
+    }
+
+    .col-3 {
+        flex-basis: 20%;
+    }
+
+    .col-4 {
+        flex-basis: 10%;
+    }
+
+    .col-5 {
+        flex-basis: 10%;
+    }
+
+    @media all and (max-width: 767px) {
+        .table-header {
+            display: none;
+        }
+
+        .table-row {}
+
+        li {
+            display: block;
+        }
+
+        .col {
+
+            flex-basis: 100%;
+
+        }
+
+        .col {
+            display: flex;
+            padding: 10px 0;
+
+            &:before {
+                color: #6C7A89;
+                padding-right: 10px;
+                content: attr(data-label);
+                flex-basis: 50%;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.weather-card {
+    width: 367px;
+    height: 449px;
+    margin-right: 0px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    //  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: -1px -1px 8px 0px rgba(0, 0, 0, 0.08), 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+.Weather-part2::-webkit-scrollbar {
+    display: none;
+}
+
+.Weather-bg {
+    width: 367px;
+    height: 450px;
+    border-radius: 9px;
+    box-shadow: -1px -1px 8px 0px rgba(0, 0, 0, 0.08), 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
+    background: url("../../../Images/weather.gif") no-repeat 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    >.Weather-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        >.Weather-head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+
+            >.city-name {
+                color: #F5F5F5;
+                font-size: 28px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal
+            }
+
+            >.city-temperature {
+                color: #F5F5F5;
+                font-size: 38px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+        }
+
+        >.Weather-part1 {
+            border-radius: 7px;
+            background: rgba(159, 160, 162, 0.30);
+            box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25), -3px -3px 10px 0px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(1.5px);
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin-top: 10px;
+
+            >.Weather-now {
+                display: flex;
+                flex-direction: column;
+                margin: 13px;
+
+                >.head-h3 {
+                    color: #F5F5F5;
+                    font-size: 12px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-bottom: 4px;
+
+
+                }
+
+                >.img {
+                    width: 25px;
+                    height: 17px;
+                    background: url("../../../Images/Vector.png") no-repeat 0 0;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                >.temp-h3 {
+
+                    color: #F5F5F5;
+                    font-size: 14px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-top: 4px;
+                    text-align: center;
+                }
+
+
+            }
+
+        }
+
+        >.Weather-part2 {
+            padding: 10px;
+            margin-top: 10px;
+            width: 328px;
+            height: 150px;
+            border-radius: 7px;
+            background: rgba(159, 160, 162, 0.30);
+            box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25), -3px -3px 10px 0px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(1.5px);
+            overflow: scroll;
+            overflow-wrap: anywhere;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+
+            >.Weather-part2-1 {
+                display: flex;
+                flex-direction: row;
+                // position: sticky;
+                // top: 0;
+
+                >.Weather-part2-1-img {
+                    width: 25px;
+                    height: 17px;
+                    background: url("../../../Images/Frame.png") no-repeat 0 0;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                }
+
+                >.Weather-part2-1-head {
+                    margin-left: 10px;
+                    color: rgba(255, 255, 255, 0.90);
+                    font-size: 12px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                }
+            }
+
+            >.bordered {
+                // border-bottom: 1px solid rgba(255, 255, 255, 0.53);
+                margin: 5px;
+                width: 270px;
+                height: 1px;
+                background-color: rgba(255, 255, 255, 0.53);
+                ;
+            }
+
+            >.Weather-part2-2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                >.day {
+                    color: #F5F5F5;
+                    font-size: 10px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+
+                >.photo-per {
+                    display: flex;
+                    flex-direction: row;
+
+                    >.photo {
+                        width: 12px;
+                        height: 14px;
+                        background: url("../../../Images/Frame1.png") no-repeat 0 0;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    >.percent {
+                        color: #F5F5F5;
+                        font-size: 14px;
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin-left: 5px;
+                    }
+                }
+
+                >.photo2 {
+                    width: 20px;
+                    height: 13px;
+                    background: url("../../../Images/Vector.png") no-repeat 0 0;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                >.min-max {
+                    display: flex;
+                    flex-direction: row;
+
+                    >.temp-min {
+                        color: #F5F5F5;
+                        font-size: 14px;
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+
+                    >.temp-max {
+                        color: #F5F5F5;
+                        font-size: 14px;
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin-left: 5px;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+
+
+}

@@ -1,0 +1,167 @@
+.editForm{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  // display: flex;
+
+  // justify-content: space-between;
+
+
+
+
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: white;
+  background-color: rgb(22, 117, 62);
+
+
+
+  &:hover {
+    background-color: rgb(43, 101, 67);
+  }
+
+
+}
+
+.logoText {
+  // font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 25px;
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+
+.nav-links li a {
+  margin-right: 15px;
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 18px;
+
+
+}
+.user{
+  margin-right: 15px;
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 18px;
+  margin-right: 25px;
+
+
+}
+
+.nav-links li a:hover {
+  color: #a8afa9;
+  text-decoration: underline;
+
+}
+.userPopup{
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  z-index: 100;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  >p{
+    font-weight: bold;
+    color: #13ec54;
+    font-size: 14px;
+  }
+  .logout{
+    height: 30px;
+    width: 95px;
+    font-size: 15px;
+    background-color: rgb(233, 89, 89);
+    color: antiquewhite;
+    padding: 2px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    bottom: 10px;
+    &:hover{
+      background-color: rgb(241, 42, 42);
+    }
+  }
+  .View{
+    height: 30px;
+    width: 65px;
+    outline: none;
+    border: none;
+    background: none;
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+     color: rgb(40, 41, 40);
+     font-weight: 500;
+    }
+  
+  }
+
+}
+
+@media screen and (max-width:600px) {
+
+.navbar{
+ 
+  display: flex!important;
+  align-items: center!important;
+  justify-content: space-between!important;
+  >.logoText {
+    width: 0%!important;
+    display: none!important;
+
+  }
+  .nav-links{
+    width: 100%!important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: space-between!important;
+  }
+}
+  
+
+
+
+  
+
+
+}
+@media screen and (max-width:365px) {
+
+
+  .nav-links li a {
+
+    font-size: 15px;
+  }
+  .nav-links {
+    gap: 10px;
+      }
+
+
+}

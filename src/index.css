@@ -1,0 +1,127 @@
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
+}
+.main{
+  overflow-y: hidden;
+}
+
+.view-data {
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.Welcome {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.head {
+  text-align: center;
+}
+.btnn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.result{
+
+  
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* .popup{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(101, 93, 93);
+  z-index: 1;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+} */
+
+.SignUpp{
+  height: 100vh;
+}
+
+.Loginn{
+  height: 100vh;
+}
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* background: #FDFBFB; */
+/* }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  display: flexbox;
+}
+
+.sideNav {
+  height: 100vh;
+}
+
+.maincontent {
+  width: 100%;
+  background: #FDFBFB;
+} */
+
+
+/* .Dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.analytics {
+  display: flex;
+  flex-direction: row;
+  background-color: blueviolet;
+  width: auto;
+  height: 25%;
+  justify-content: space-around;
+}
+
+.elements {
+  background-color: black;
+  height: 90%;
+  width: 20%;
+  margin-top: 10px;
+  border-radius: 1rem;
+} */ 

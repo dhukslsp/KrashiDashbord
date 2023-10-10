@@ -1,0 +1,99 @@
+@mixin mob {
+    @media (max-width:450px) {
+        @content;
+    }
+}
+
+
+
+.register1{
+    background: url("../../Images/bg1.jpeg") no-repeat 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgb(161, 179, 179);
+    @include mob {
+        background: none;
+        background-color: #739f65;
+    }
+}
+// .signup-background{
+//     // margin-top: 2.5rem;
+// }
+
+.signUpBox{
+
+
+    background: rgba(235, 232, 232, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: -30px -30px 100px 10px rgba(199, 187, 187, 0.2), 30px 40px 100px 10px rgba(0, 0, 0, 0.25);
+    // position: relative;
+    border: 0.1px solid rgb(121, 120, 120);
+    padding: 15px;
+
+    //vertically position center
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+.labels{
+    font-size: 12px;
+}
+.form-input{
+    height: 30px  !important;
+
+    border: 1px solid rgb(123, 122, 122) !important;
+    box-shadow: none !important;
+    color: black !important;
+}
+.form-input1{
+    border: 1px solid rgb(123, 122, 122) !important;
+    box-shadow: none !important;
+    color: black !important;
+
+}
+
+
+.logoSignUp {
+    width: auto;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mob {
+        font-size: 50px;
+    }
+
+}
+.submitSignUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 40px;
+        padding: 8px;
+        color: white;
+        background-color: rgb(22, 117, 62);
+        border: none;
+        border-radius: 10px;
+        &:hover{
+            background-color: rgb(23, 47, 33); 
+        }
+    }
+
+
+
+}
+.signUp{
+    background-color: #91ee78;
+}
+

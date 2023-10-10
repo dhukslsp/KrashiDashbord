@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid black
+}
+
+@mixin mob {
+    @media (max-width:460px) {
+        @content;
+    }
+}
+
+.loginBg {
+
+
+    height: 100vh;
+    width: 100%;
+    background: url("../../Images/bg1.jpeg") no-repeat 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(80, 247, 144);
+
+    @include mob {
+        display: block;
+        background: none;
+        background-color: #97e97b;
+    }
+
+
+
+}
+
+// .login-background{
+//     margin-top: 2.5rem;
+// }
+
+.loginBox {
+
+    background:whitesmoke;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: -30px -30px 100px 10px rgba(199, 187, 187, 0.2), 30px 40px 100px 10px rgba(0, 0, 0, 0.25);
+    // position: relative;
+    border: 0.1px solid rgb(121, 120, 120);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+
+label {
+    color: black !important;
+    font-size: 15px;
+}
+
+.logo {
+    width: auto;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mob {
+        font-size: 50px;
+    }
+
+}
+.emailError{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+
+.loginSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >button {
+        width: 140px;
+        height: 45px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 5px;
+        border-radius: 10px;
+
+        @include mob {
+            width: 120px;
+            height: 40px;
+            padding: 12px;
+        }
+
+        background-color: rgb(22, 117, 62);
+        border: none;
+
+        &:hover {
+            background-color: rgb(23, 47, 33);
+        }
+    }
+}
+
+.eyeBtn {
+    background-color: rgb(249, 249, 249);
+    height: 42px;
+    width: 40px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(174, 170, 170) !important;
+    box-shadow: none !important;
+    // outline: 1px solid rgb(163, 159, 159);
+    color: black !important;
+}
+
+.outline {
+
+    border: 1px solid rgb(174, 170, 170) !important;
+    box-shadow: none !important;
+    color: black !important;
+    ::placeholder {
+    font-size: 15px;
+      }
+}
+.check{
+    font-size: 15px !important;
+
+    @include mob {
+        font-size: 12px !important;
+       
+
+    }
+}
+.anchor{
+    
+    font-size: 14px !important;
+    color: #1e0856 !important;
+    @include mob {
+        font-size: 12px !important;
+        
+
+    }
+}
+p {
+    color: black !important;
+    font-size: 14px;
+    @include mob {
+        font-size: 12px;
+        
+
+    }
+}
+/* Add appropriate styling for your popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: #f5f3f3;
+  }
+  
+  .popup-content {
+    background-color: rgb(95, 105, 94);
+    border-radius: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #f5f3f3;
+    
+  }
+  .para1{
+    color: white;
+}
+  /* Style for the close button */
+  .popup button {
+    background-color: transparent;
+    color: #fbfcfd;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(26, 194, 65);
+    border-radius: 15px;
+    border: none;
+    outline: none;
+  }

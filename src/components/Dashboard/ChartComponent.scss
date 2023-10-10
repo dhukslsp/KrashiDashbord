@@ -1,0 +1,119 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.DeviceUpdates {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+
+    .chart1 {
+        // position: absolute;
+        margin-left: 50px;
+        height: 300px;
+        width: 700px;
+        // background-color: black;
+    }
+
+    >.upper-head {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+        gap: 1280px;
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-bottom: 25px;
+    }
+
+    >.main-head {
+        width: 229px;
+        height: 38px;
+        margin-bottom: 10px;
+    }
+
+    >.both-overview {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        >.tChart {
+            // margin-top: 100px;
+            // margin-bottom: 100px;
+            width: 813px;
+            height: 480px;
+            padding: 15px;
+            border-radius: 9px;
+            background: #FFF;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+
+            >.headSection {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 15px;
+
+                >.btns {
+                    display: flex;
+                    flex-direction: row;
+                    border-radius: 7px;
+                    // border: 1px solid rgba(0, 0, 0, 0.10);
+                    // background: #EDEDED;
+                    display: inline-flex;
+                    padding: 2px 2px;
+                    justify-content: center;
+                    align-items: center;
+
+                    >.btn {
+                        margin: 0px 10px;
+                        padding: 2px 5px;
+                        border: none;
+
+                        border-radius: 7px;
+
+                        &:hover {
+                            background-color: #FFF;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .chart1{
+//     width: 504.003px;
+//     height: 200px;
+
+// }

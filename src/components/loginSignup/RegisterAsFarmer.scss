@@ -1,0 +1,43 @@
+@mixin mob {
+    @media (max-width:460px) {
+        @content;
+    }
+}
+.register{
+    height: 100vh;
+    width: 100%;
+    background: url("../../Images/pngwing.png") no-repeat 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(161, 179, 179);
+    overflow-x: hidden;
+    overflow-y: auto;
+    @include mob {
+        background: none;
+        background-color: #739f65;
+    }
+
+}
+.btnn-1{
+        width: 140px;
+        height: 45px;
+        padding: 8px;
+        color: white;
+        background-color: rgb(26, 69, 44);
+        border: none;
+        &:hover{
+            background-color: rgb(23, 47, 33); 
+        }
+    }
+
+
+@media screen and (max-width:700px) {
+
+    .register{
+        height: auto;
+ 
+
+    }
+}
+
