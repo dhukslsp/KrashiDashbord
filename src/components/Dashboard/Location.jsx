@@ -128,6 +128,7 @@ const Location = () => {
       </div>
 
       <div className="both-overview">
+      {/* first chart */}
         <div className="tChart">
           <div className="headSection">
             <div>
@@ -143,11 +144,7 @@ const Location = () => {
             <div>
               <div className="chart1">
                 <Bar
-                  style={{
-                    width: "765px",
-                    height: "350px",
-                    marginLeft: "-40px",
-                  }}
+                  className="barstyle"
                   data={chartData}
                   options={option1}
                 />
@@ -155,7 +152,7 @@ const Location = () => {
             </div>
           </div>
         </div>
-
+        {/*second chart*/}
         <div className="tChart">
           <div className="headSection">
             <div>
@@ -171,11 +168,7 @@ const Location = () => {
             <div>
               <div className="chart1">
                 <Bar
-                  style={{
-                    width: "765px",
-                    height: "350px",
-                    marginLeft: "-40px",
-                  }}
+                  className="barstyle"
                   data={chartData}
                   options={option1}
                 />

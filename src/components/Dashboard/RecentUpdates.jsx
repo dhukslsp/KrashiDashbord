@@ -25,7 +25,7 @@ export default function RecentUpdates() {
                             <img src={battery} alt=""></img>
                         </div>
                         <div className="card-text">
-                            <div className="card-text-inner1"><h1 className="card-text1">100%</h1></div>
+                            <div className="card-text-inner1"><h2 className="card-text1">100%</h2></div>
                             <div className="card-text-inner2"><h6 className="card-text2">Battery</h6></div>
                         </div>
                     </div>

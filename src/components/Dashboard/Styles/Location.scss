@@ -5,51 +5,50 @@
 }
 
 .DeviceUpdates {
-    display: flex;
-    flex-direction: column;
-    height: 600px;
+    height: auto;
     width: 100%;
     margin-top: 70px;
     .chart1 {
         // position: absolute;
-        margin-left: 50px;
+        margin-left: 18px;
         height: 300px;
-        width: 700px;
+        // height:100%;
+        width: 90%;
         // background-color: black;
+    }
+    @media (max-width:1429px) {
+        .chart1{
+            height: 100%;
+        }
     }
 
     >.upper-head {
-        display: flex;
-        flex-direction: row;
         // justify-content: space-between;
-        gap: 1280px;
-        margin-top: 25px;
+        margin-top:  6pc;
         margin-left: 40px;
-        margin-bottom: 25px;
     }
 
     >.main-head {
-        width: 229px;
-        height: 38px;
-        margin-bottom: 10px;
+        display: inline;
+        height: 28px;
     }
 
     >.both-overview {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+        // overflow-x: scroll;
 
         >.tChart {
-            // margin-top: 100px;
+            margin-top: 20px;
             // margin-bottom: 100px;
-            // width: 813px;
-            width: 700px;
-            height: 480px;
+            width: 45vw;
+            margin-left: 1pc;
+            // width: 650px;
+            height: 70%;
             padding: 15px;
             border-radius: 9px;
             background: #FFF;
-            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.15);
 
             >.headSection {
                 display: flex;
@@ -82,15 +81,33 @@
                     }
                 }
             }
+            >.barstyle{
+                width: 100%;
+                height: 350px;
+                margin-Left: -40px;
+            }
+        
 
         }
+        @media (max-width: 841px) {
+            .tChart{
+                width: 600px;
+            }
+        }
+    }
 
-
-
+    @media (max-width: 841px) {
+        .both-overview{
+            overflow-x: scroll;
+        }
+    }
+    @media (max-width: 786px) {
+        .tChart{
+            width: 200px;
+        }
     }
 
 }
-
 
 
 
