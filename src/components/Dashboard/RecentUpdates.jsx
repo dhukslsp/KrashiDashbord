@@ -14,12 +14,13 @@ export default function RecentUpdates() {
 
 
     return (
+        <div style = {{display:"inline"}}>
         <div className="recent-update">
             <div >
                 <h1 className="recent-update-text">Recent Updates</h1>
             </div>
             <div className="recent-update-cards">
-                <div className="recent-update-uppercards">
+                <div className="recent-update-lowercards">
                     <div className="cards">
                         <div className="card-image">
                             <img src={battery} alt=""></img>
@@ -43,7 +44,7 @@ export default function RecentUpdates() {
                             <img src={humidity} alt="" ></img>
                         </div>
                         <div className="card-text">
-                            <div className="card-text-inner1"><h1 className="card-text1">51</h1></div>
+                            <div className="card-text-inner1"><h1 className="card-text1">51 </h1></div>
                             <div className="card-text-inner2"><h6 className="card-text2">Amb. Humidity</h6></div>
                         </div>
                     </div>
@@ -52,12 +53,10 @@ export default function RecentUpdates() {
                             <img src={soilMoisture} alt=""></img>
                         </div>
                         <div className="card-text">
-                            <div className="card-text-inner1"><h1 className="card-text1">29</h1></div>
+                            <div className="card-text-inner1"><h1 className="card-text1">29 </h1></div>
                             <div className="card-text-inner2"><h6 className="card-text2">Soil Moisture</h6></div>
                         </div>
                     </div>
-                </div>
-                <div className="recent-update-lowercards">
                     <div className="cards">
                         <div className="card-image">
                             <img src={soilTemp} alt=""></img>
@@ -108,6 +107,7 @@ export default function RecentUpdates() {
 
                 </div> */}
             </div>
+        </div>
         </div>
     )
 }

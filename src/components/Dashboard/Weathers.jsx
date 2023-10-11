@@ -50,7 +50,6 @@ export default function Weathers() {
     };
 
     return (
-
         <div className="weather">
             <div className="history-data">
                 <div className="weather-table-history">
@@ -107,7 +106,6 @@ export default function Weathers() {
                 </div>
 
             </div>
-
-        </div >
+            </div>
     )
 }

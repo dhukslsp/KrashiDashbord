@@ -12,7 +12,7 @@ export default function MainContent() {
         <div className="maincontent">
             <Location />
             <RecentUpdates />
-        {/*<Weathers />*/}
+            <Weathers />
         </div>
 
 

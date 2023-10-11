@@ -144,7 +144,10 @@ const Location = () => {
             <div>
               <div className="chart1">
                 <Bar
-                  className="barstyle"
+                  style = {{
+                    width:"150%",
+                    height: "350px",
+                  }}
                   data={chartData}
                   options={option1}
                 />
@@ -168,6 +171,10 @@ const Location = () => {
             <div>
               <div className="chart1">
                 <Bar
+                  style = {{
+                    width:"150%",
+                    height: "350px",
+                  }}
                   className="barstyle"
                   data={chartData}
                   options={option1}
