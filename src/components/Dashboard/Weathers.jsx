@@ -57,7 +57,7 @@ export default function Weathers() {
                         <div>
                             <h3 className="history-letter">  History Logs</h3>
                         </div>
-                        <div>
+                        <div className="navbuttons">
                             <button className="table-button"><img src={button2} alt=""></img></button>
                             <button className="table-button"><img src={button1} alt=""></img></button>
                         </div>

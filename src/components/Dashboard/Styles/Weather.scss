@@ -14,13 +14,15 @@
 .history-data {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 62px;
     // justify-content: space-evenly;
     width: 100%;
 }
 
 .weather-table-history {
-    width: 1210px;
+    width: 66%;
+    overflow-x: scroll;
     height: 450px;
     flex-shrink: 0;
     border-radius: 9px;
@@ -30,17 +32,25 @@
     background: #FFF;
     box-shadow: -1px -1px 8px 0px rgba(0, 0, 0, 0.08), 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
 }
+@media (max-width: "1336px") {
 
+    .weather-table-history{
+        width: 100%;
+    }
+}
 
 .device-history-log {
-    display: flex;
-    flex-direction: row;
-    gap: 860px;
     // justify-content: space-between;
-    margin-left: 50px;
+    display: flex;
+    margin-left: 35px;
     margin-bottom: 12px;
     margin-top: 20px;
+
     //  overflow-y: scroll;
+    >.navbuttons{
+        justify-self: right;
+        margin-left: 50px;
+    }
 }
 
 .history-letter {
@@ -78,14 +88,21 @@ h2 {
 }
 
 .responsive-table {
-    width: 1200px;
-
+    width: 100%;
+    overflow-x: scroll;
+    padding-left: 0px;
+    display: sticky;
+    top:1px;
     li {
         border-radius: 3px;
-        padding: 25px 30px;
+        padding: 25px;
+        padding-left: 0px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         // margin-bottom: 1px;
+        >.col{
+            margin-left: 20px;
+        }
     }
 
     .table-header {
@@ -97,6 +114,9 @@ h2 {
         text-transform: uppercase;
         letter-spacing: 0.03em;
         box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+        >div{
+            margin-left: 20px;
+        }
     }
 
     .table-row {
@@ -107,7 +127,7 @@ h2 {
     }
 
     .col-1 {
-        flex-basis: 10%;
+        flex-basis: 5%;
     }
 
     .col-2 {
@@ -115,7 +135,7 @@ h2 {
     }
 
     .col-3 {
-        flex-basis: 20%;
+        flex-basis: 10%;
     }
 
     .col-4 {
@@ -127,34 +147,8 @@ h2 {
     }
 
     @media all and (max-width: 767px) {
-        .table-header {
-            display: none;
-        }
 
         .table-row {}
-
-        li {
-            display: block;
-        }
-
-        .col {
-
-            flex-basis: 100%;
-
-        }
-
-        .col {
-            display: flex;
-            padding: 10px 0;
-
-            &:before {
-                color: #6C7A89;
-                padding-right: 10px;
-                content: attr(data-label);
-                flex-basis: 50%;
-                text-align: right;
-            }
-        }
     }
 }
 
@@ -167,6 +161,12 @@ h2 {
     //  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: -1px -1px 8px 0px rgba(0, 0, 0, 0.08), 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
 }
+@media (max-width: "1336px") {
+
+    .weather-card{
+        width: 100%;
+    }
+}
 
 
 .Weather-part2::-webkit-scrollbar {
@@ -174,7 +174,6 @@ h2 {
 }
 
 .Weather-bg {
-    width: 367px;
     height: 450px;
     border-radius: 9px;
     box-shadow: -1px -1px 8px 0px rgba(0, 0, 0, 0.08), 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
@@ -184,11 +183,8 @@ h2 {
     background-size: cover;
 
     >.Weather-data {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
+        
+        padding-right: 10px;
         >.Weather-head {
             display: flex;
             flex-direction: column;
@@ -202,7 +198,8 @@ h2 {
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 500;
-                line-height: normal
+                line-height: normal;
+                margin-top: 22px;
             }
 
             >.city-temperature {
@@ -225,7 +222,8 @@ h2 {
             flex-direction: row;
             padding: 10px;
             margin-top: 10px;
-
+            margin-left: auto;
+            justify-content: center;
             >.Weather-now {
                 display: flex;
                 flex-direction: column;
@@ -244,7 +242,6 @@ h2 {
                 }
 
                 >.img {
-                    width: 25px;
                     height: 17px;
                     background: url("../../../Images/Vector.png") no-repeat 0 0;
                     background-position: center;
@@ -272,8 +269,7 @@ h2 {
         >.Weather-part2 {
             padding: 10px;
             margin-top: 10px;
-            width: 328px;
-            height: 150px;
+            height: 200px;
             border-radius: 7px;
             background: rgba(159, 160, 162, 0.30);
             box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25), -3px -3px 10px 0px rgba(0, 0, 0, 0.15);
@@ -290,7 +286,6 @@ h2 {
                 // top: 0;
 
                 >.Weather-part2-1-img {
-                    width: 25px;
                     height: 17px;
                     background: url("../../../Images/Frame.png") no-repeat 0 0;
                     background-position: center;
@@ -314,7 +309,6 @@ h2 {
             >.bordered {
                 // border-bottom: 1px solid rgba(255, 255, 255, 0.53);
                 margin: 5px;
-                width: 270px;
                 height: 1px;
                 background-color: rgba(255, 255, 255, 0.53);
                 ;

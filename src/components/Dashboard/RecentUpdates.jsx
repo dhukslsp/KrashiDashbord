@@ -14,13 +14,11 @@ export default function RecentUpdates() {
 
 
     return (
-        <div style = {{display:"inline"}}>
         <div className="recent-update">
             <div >
                 <h1 className="recent-update-text">Recent Updates</h1>
             </div>
             <div className="recent-update-cards">
-                <div className="recent-update-lowercards">
                     <div className="cards">
                         <div className="card-image">
                             <img src={battery} alt=""></img>
@@ -93,21 +91,7 @@ export default function RecentUpdates() {
                             <div className="card-text-inner2"><h6 className="card-text2">EC</h6></div>
                         </div>
                     </div>
-                </div>
-                {/* <div className="cards">
-
-                </div>
-                <div className="cards">
-
-                </div>
-                <div className="cards">
-
-                </div>
-                <div className="cards">
-
-                </div> */}
             </div>
-        </div>
         </div>
     )
 }

@@ -1,16 +1,12 @@
 .recent-update {
-    display: flexbox;
-    flex-direction: column;
     width: 100%;
+    height: fit-content;
     margin-top: 3pc;
 }
 
 .recent-update-text {
-    display: flex;
     width: 229px;
     height: 38px;
-    flex-direction: column;
-    flex-shrink: 0;
     color: #000;
     font-size: 28px;
     font-family: Poppins;
@@ -20,10 +16,9 @@
 }
 
 .recent-update-cards {
-    height: 391px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: 31px;
     margin-right: 31px;
 }
@@ -42,6 +37,7 @@
 .cards {
     width: 400px;
     height: auto;
+    margin: 1pc;
     padding: 10px;
     border-radius: 9px;
     border: 1px solid rgba(0, 0, 0, 0.10);
@@ -92,8 +88,9 @@
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+        margin: .2pc;
     }
-    .recent-update-lowercards{
+    .recent-update-cards{
         display: grid;
         grid-template-columns: auto auto;
     }
