@@ -37,6 +37,10 @@
     .weather-table-history{
         width: 100%;
     }
+    .history-data{
+
+        gap: 0px;
+    }
 }
 
 .device-history-log {
@@ -98,10 +102,15 @@ h2 {
         padding: 25px;
         padding-left: 0px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         // margin-bottom: 1px;
         >.col{
             margin-left: 20px;
+        }
+    }
+    @media (max-width:671px) {
+        li{
+            justify-content: flex-start;
         }
     }
 
@@ -165,6 +174,7 @@ h2 {
 
     .weather-card{
         width: 100%;
+        margin-bottom: 5pc;
     }
 }
 

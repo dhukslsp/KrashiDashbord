@@ -11,8 +11,7 @@ import ec from "../../Images/image 7.png"
 
 
 export default function RecentUpdates() {
-
-
+    
     return (
         <div className="recent-update">
             <div >
